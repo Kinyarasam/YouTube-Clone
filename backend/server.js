@@ -1,14 +1,14 @@
 #!/usr/bin/env node
-const express = require('express');
+import express from 'express';
+import dotenv from'dotenv'
 
-require('dotenv').config();
+dotenv.config();
 
 /**
  * Port number.
  * @const
  */
 const port = process.env.PORT || 4000;
-
 
 /**
  * Express app
@@ -29,6 +29,10 @@ const start = () => {
   });
 };
 
-start();
+try {
+  start();
+} catch (err) {
+  console.log('Server could not be started...\nError: ', err)
+}
 
-module.exports = app;
+export default app;

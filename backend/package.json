@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Backend for the YouTube project",
   "main": "server.js",
+  "type": "module",
   "scripts": {
+    "dev": "echo \"Starting server\" && nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "kinyarassam",
