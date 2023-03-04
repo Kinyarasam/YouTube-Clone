@@ -31,4 +31,4 @@ const start = () => {
 
 start();
 
-module.exports = start;
+module.exports = app;
