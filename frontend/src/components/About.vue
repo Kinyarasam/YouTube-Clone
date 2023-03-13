@@ -1,14 +1,16 @@
 <template>
-  <div id="app">
-    <router-view />
+  <div>
+    Get to know More About us!!!
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App',
+  name: 'AboutView'
+
 }
 </script>
 
 <style>
+
 </style>
