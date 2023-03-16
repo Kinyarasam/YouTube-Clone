@@ -1,16 +1,12 @@
 <template>
-  <div class="bg-black min-h-screen">
-    <HeaderView />
+  <div class="bg-[#111] min-h-screen text-[#ddd] px-8 py-2">
     <router-view />
   </div>
 </template>
 
 <script>
-import HeaderView from './components/Header'
-
 export default {
   name: 'App',
-  components: {HeaderView}
 }
 </script>
 
