@@ -5,6 +5,7 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
+    "test-redis": "nodemon utils/testRedisConnection.js",
     "dev": "echo \"Starting server\" && nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,6 +14,7 @@
   "dependencies": {
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "nodemon": "^2.0.21"
+    "nodemon": "^2.0.21",
+    "redis": "^4.6.5"
   }
 }
