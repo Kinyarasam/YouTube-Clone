@@ -11,12 +11,12 @@
  *  '.router' to enable routing in the app. Finall, it mounts the app to the
  *  DOM element with if 'app'.
  */
-import { createApp } from 'vue'
+import * as vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import './index.css';
 
-const app = createApp(App)
+const app = vue.createApp(App)
 
 /**
  * Mount the Vue.js application to the DOM
